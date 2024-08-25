@@ -9,7 +9,7 @@ RUN pip install --no-cache-dir akshare fastapi uvicorn gunicorn -i http://mirror
 RUN pip install --no-cache-dir aktools -i https://pypi.org/simple --upgrade
 
 # 设置工作目录方便启动
-ENV APP_HOME=/usr/local/lib/python3.11/site-packages/aktools
+ENV APP_HOME=/usr/local/lib/python3.12/site-packages/aktools
 WORKDIR $APP_HOME
 
 # 默认启动 gunicorn 服务
